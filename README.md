@@ -14,3 +14,12 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+### 学习规划 🌱
+* [DataStructureAlgorithm](https://github.com/CoderLiLe/DataStructureAlgorithm)🔥：数据结构与算法
+
+### 学习资料 📫
+
+
+### 开源项目 🔭
+* [MySpring](https://github.com/CoderLiLe/JavaCode/tree/master/MySpring)：自己实现Spring功能
