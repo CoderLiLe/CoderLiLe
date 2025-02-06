@@ -23,4 +23,4 @@ Here are some ideas to get you started:
 
 
 ### 开源项目 🔭
-* [MySpring](https://github.com/CoderLiLe/MySpring)：自己实现Spring功能
+* [MiniSpring](https://github.com/CoderLiLe/MiniSpring)：自己实现的MiniSpring框架，包含Spring的核心功能
