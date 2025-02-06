@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 -->
 
 ### 学习规划 🌱
-* [DataStructureAlgorithm](https://github.com/CoderLiLe/DataStructureAlgorithm)🔥：数据结构与算法
+* [hello-algo](https://github.com/CoderLiLe/hello-algo)🔥：数据结构与算法
 
 ### 学习资料 📫
 * [Java](https://github.com/CoderLiLe/Java)🔥：Java相关知识点总结及面试题汇总
