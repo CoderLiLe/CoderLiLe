@@ -17,9 +17,10 @@ Here are some ideas to get you started:
 
 ### 学习规划 🌱
 * [hello-algo](https://github.com/CoderLiLe/hello-algo)🔥：数据结构与算法
+* [hello-java](https://github.com/CoderLiLe/hello-java)🔥：Java相关知识点总结及面试题汇总
 
 ### 学习资料 📫
-* [Java](https://github.com/CoderLiLe/Java)🔥：Java相关知识点总结及面试题汇总
+
 
 ### 开源项目 🔭
 * [MySpring](https://github.com/CoderLiLe/MySpring)：自己实现Spring功能
