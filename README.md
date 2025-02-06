@@ -19,7 +19,7 @@ Here are some ideas to get you started:
 * [DataStructureAlgorithm](https://github.com/CoderLiLe/DataStructureAlgorithm)🔥：数据结构与算法
 
 ### 学习资料 📫
-
+* [Java](https://github.com/CoderLiLe/Java)🔥：Java相关知识点总结及面试题汇总
 
 ### 开源项目 🔭
-* [MySpring](https://github.com/CoderLiLe/JavaCode/tree/master/MySpring)：自己实现Spring功能
+* [MySpring](https://github.com/CoderLiLe/MySpring)：自己实现Spring功能
