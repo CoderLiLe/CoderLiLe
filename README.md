@@ -15,6 +15,22 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
+<details>
+<summary>My top languages</summary>
+
+| Rank | Languages |
+|-----:|-----------|
+|     1| Java|
+|     2| Javascript|
+|     3| Python    |
+|     4| C         |
+|     5| Objective-C|
+|     6| Swift     |
+|     7| C++       |
+|     8| SQL       |
+
+</details>
+
 ### 学习规划 🌱
 * [hello-algo](https://github.com/CoderLiLe/hello-algo)🔥：数据结构与算法
 * [hello-java](https://github.com/CoderLiLe/hello-java)🔥：Java相关知识点总结及面试题汇总
