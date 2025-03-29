@@ -1,19 +1,12 @@
 ## Hi there 👋
 
-<!--
-**CoderLiLe/CoderLiLe** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Hi there 👋,I'm LiLe.
 
-Here are some ideas to get you started:
+- 🔭 I’m currently working on something cool.
+- 🌱 I’m currently learning Everything I like.
+- 💬 Ask me about anythin relate to Java/Python/c/c++/js/sql/swift/go.
+- 📫 How to reach me: liledeveloper@163.com
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
 <!-- 徽章end -->
 <br>
 <!-- Github奖杯🏆start -->
@@ -43,7 +36,11 @@ Here are some ideas to get you started:
   </tr>
 </table>
 
-### 技能
+You are my ![Visitor Count](https://profile-counter.glitch.me/CoderLiLe/count.svg) visitor, Thank You! :kissing_heart: :kissing_heart:
+
+### My Skill Set
+
+![](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 <details>
 <summary>My top languages</summary>
 
