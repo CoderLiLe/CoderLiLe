@@ -28,6 +28,15 @@ Here are some ideas to get you started:
 <!-- 统计卡片end -->
 <br>
 
+<table align="center">
+  <tr>
+    <td>
+      <img src="https://github-readme-activity-graph.vercel.app/graph?username=CoderLiLe" />
+    </td>
+  </tr>
+</table>
+
+### 技能
 <details>
 <summary>My top languages</summary>
 
