@@ -14,6 +14,13 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+<!-- 徽章end -->
+<br>
+<!-- Github奖杯🏆start -->
+<div align="center"> <img src="https://github-profile-trophy.vercel.app/?username=CoderLiLe&theme=onedark&row=1&column=6&no-frame=true&no-bg=true"> </div>
+<!-- Github奖杯🏆end -->
+<br>
+
 <!-- Github连续打卡start -->
 <div align="center">
   <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=CoderLiLe&theme=dark&hide_border=true" />
