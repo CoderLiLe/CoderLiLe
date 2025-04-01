@@ -62,6 +62,7 @@ You are my ![Visitor Count](https://profile-counter.glitch.me/CoderLiLe/count.sv
 ### 学习规划 🌱
 * [hello-algo](https://github.com/CoderLiLe/hello-algo)🔥：数据结构与算法
 * [hello-java](https://github.com/CoderLiLe/hello-java)🔥：Java相关知识点总结及面试题汇总
+* [hello-python](https://github.com/CoderLiLe/hello-python)：Python相关笔记
 
 ### 学习资料 📫
 
