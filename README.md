@@ -37,6 +37,9 @@
 ![IceEnd's GitHub stats](https://github-immortality.vercel.app/api?username=CoderLiLe)
 -->
 
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
+
 ### Repo card
 
 <div style="display: flex;">
