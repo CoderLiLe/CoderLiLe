@@ -38,6 +38,73 @@
 -->
 
 <!--START_SECTION:waka-->
+![Code Time](http://img.shields.io/badge/Code%20Time-0%20secs-blue)
+
+![Profile Views](http://img.shields.io/badge/Profile%20Views-27-blue)
+
+**🐱 My GitHub Data** 
+
+> 📦 ? Used in GitHub's Storage 
+ > 
+> 🏆 639 Contributions in the Year 2025
+ > 
+> 💼 Opted to Hire
+ > 
+> 📜 7 Public Repositories 
+ > 
+> 🔑 0 Private Repositories 
+ > 
+**I'm an Early 🐤** 
+
+```text
+🌞 Morning                234 commits         █████░░░░░░░░░░░░░░░░░░░░   19.23 % 
+🌆 Daytime                430 commits         █████████░░░░░░░░░░░░░░░░   35.33 % 
+🌃 Evening                516 commits         ███████████░░░░░░░░░░░░░░   42.40 % 
+🌙 Night                  37 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   03.04 % 
+```
+📅 **I'm Most Productive on Tuesday** 
+
+```text
+Monday                   112 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.20 % 
+Tuesday                  361 commits         ███████░░░░░░░░░░░░░░░░░░   29.66 % 
+Wednesday                127 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.44 % 
+Thursday                 168 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.80 % 
+Friday                   114 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.37 % 
+Saturday                 153 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.57 % 
+Sunday                   182 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.95 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Shanghai
+
+💬 Programming Languages: 
+No Activity Tracked This Week
+
+🔥 Editors: 
+No Activity Tracked This Week
+
+🐱‍💻 Projects: 
+No Activity Tracked This Week
+
+💻 Operating System: 
+No Activity Tracked This Week
+```
+
+**I Mostly Code in Java** 
+
+```text
+Java                     2 repos             ████████████░░░░░░░░░░░░░   50.00 % 
+JavaScript               1 repo              ██████░░░░░░░░░░░░░░░░░░░   25.00 % 
+Objective-C              1 repo              ██████░░░░░░░░░░░░░░░░░░░   25.00 % 
+```
+
+
+
+
+ Last Updated on 02/04/2025 16:42:48 UTC
 <!--END_SECTION:waka-->
 
 ### Repo card
