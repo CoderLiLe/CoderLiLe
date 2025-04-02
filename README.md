@@ -38,6 +38,11 @@
 
 ![IceEnd's GitHub stats](https://github-immortality.vercel.app/api?username=CoderLiLe)
 
+### Repo card
+![hello-algo仓库信息卡片](https://github-stats.ubrong.com/api/pin/?username=CoderLiLe&repo=hello-algo&theme=dark)
+![hello-java仓库信息卡片](https://github-stats.ubrong.com/api/pin/?username=CoderLiLe&repo=hello-java&theme=dark)
+![hello-python仓库信息卡片](https://github-stats.ubrong.com/api/pin/?username=CoderLiLe&repo=hello-python&theme=dark)
+
 ### my social information
 <!-- https://github.com/songquanpeng/stats-cards -->
 ![github统计](https://stats.justsong.cn/api/github?username=CoderLiLe&theme=dark)
