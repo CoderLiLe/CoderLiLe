@@ -46,6 +46,8 @@
 
 > 📦 ? Used in GitHub's Storage 
  > 
+> 🏆 1,090 Contributions in the Year 2025
+ > 
 > 💼 Opted to Hire
  > 
 > 📜 10 Public Repositories 
@@ -79,16 +81,16 @@ Sunday                   220 commits         ███░░░░░░░░�
 🕑︎ Time Zone: Asia/Shanghai
 
 💬 Programming Languages: 
-Java                     0 secs              █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 🔥 Editors: 
-IntelliJ IDEA            0 secs              █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-hello-redis              0 secs              █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Mac                      0 secs              █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 **I Mostly Code in JavaScript** 
@@ -104,7 +106,7 @@ Objective-C              1 repo              ███░░░░░░░░�
 
 
 
- Last Updated on 12/07/2025 18:50:19 UTC
+ Last Updated on 13/07/2025 18:50:00 UTC
 <!--END_SECTION:waka-->
 
 ### Repo card
