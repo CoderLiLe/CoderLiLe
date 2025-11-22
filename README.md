@@ -81,16 +81,17 @@ Sunday                   247 commits         ████░░░░░░░�
 🕑︎ Time Zone: Asia/Shanghai
 
 💬 Programming Languages: 
-No Activity Tracked This Week
+Java                     0 secs              ████████████████████████░   95.85 % 
+Markdown                 0 secs              █░░░░░░░░░░░░░░░░░░░░░░░░   04.15 % 
 
 🔥 Editors: 
-No Activity Tracked This Week
+IntelliJ IDEA            0 secs              █████████████████████████   100.00 % 
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+hello-algo               0 secs              █████████████████████████   100.00 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+Mac                      0 secs              █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in JavaScript** 
@@ -106,7 +107,7 @@ Objective-C              1 repo              ███░░░░░░░░�
 
 
 
- Last Updated on 21/11/2025 18:48:47 UTC
+ Last Updated on 22/11/2025 18:48:15 UTC
 <!--END_SECTION:waka-->
 
 ### Repo card
