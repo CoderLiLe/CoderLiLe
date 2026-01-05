@@ -38,9 +38,9 @@
 -->
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-56%20hrs%2026%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-56%20hrs%2026%20mins-blue?style=flat)
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
@@ -81,20 +81,16 @@ Sunday                   247 commits         ████░░░░░░░�
 🕑︎ Time Zone: Asia/Shanghai
 
 💬 Programming Languages: 
-Other                    7 mins              ███████████████░░░░░░░░░░   60.01 % 
-Java                     4 mins              ████████░░░░░░░░░░░░░░░░░   33.49 % 
-Markdown                 0 secs              █░░░░░░░░░░░░░░░░░░░░░░░░   04.89 % 
-JSON                     0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.52 % 
-XML                      0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.10 % 
+No Activity Tracked This Week
 
 🔥 Editors: 
-VS Code                  13 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-hello-algo               13 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Mac                      13 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 **I Mostly Code in JavaScript** 
@@ -110,7 +106,7 @@ Objective-C              1 repo              ███░░░░░░░░�
 
 
 
- Last Updated on 04/01/2026 18:52:04 UTC
+ Last Updated on 05/01/2026 18:56:56 UTC
 <!--END_SECTION:waka-->
 
 ### Repo card
