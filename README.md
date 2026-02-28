@@ -38,7 +38,7 @@
 -->
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-56%20hrs%2026%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-57%20hrs%2023%20mins-blue?style=flat)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue?style=flat)
 
@@ -81,16 +81,23 @@ Sunday                   247 commits         ████░░░░░░░�
 🕑︎ Time Zone: Asia/Shanghai
 
 💬 Programming Languages: 
-No Activity Tracked This Week
+Java                     37 mins             █████████████████░░░░░░░░   67.13 % 
+XML                      13 mins             ██████░░░░░░░░░░░░░░░░░░░   23.46 % 
+Bash                     2 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.95 % 
+TypeScript               1 min               █░░░░░░░░░░░░░░░░░░░░░░░░   03.43 % 
+Markdown                 0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.66 % 
 
 🔥 Editors: 
-No Activity Tracked This Week
+IntelliJ IDEA            54 mins             ████████████████████████░   96.20 % 
+VS Code                  2 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   03.80 % 
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+NFTurbo_Server           49 mins             ██████████████████████░░░   88.82 % 
+hello-algo               4 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   07.38 % 
+NFTurbo_Admin            2 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   03.80 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+Mac                      56 mins             █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in JavaScript** 
@@ -106,7 +113,7 @@ Objective-C              1 repo              ███░░░░░░░░�
 
 
 
- Last Updated on 27/02/2026 19:10:41 UTC
+ Last Updated on 28/02/2026 18:56:45 UTC
 <!--END_SECTION:waka-->
 
 ### Repo card
