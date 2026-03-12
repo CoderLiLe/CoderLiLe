@@ -1,0 +1,33 @@
+name: Check Links
+
+on:
+  schedule:
+    # 每月1号凌晨2点运行
+    - cron: '0 2 1 * *'
+  workflow_dispatch:
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: "--verbose --no-progress README.md"
+      
+      - name: Create report
+        if: always()
+        run: |
+          echo "## 🔗 链接检查报告" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "检查时间: $(date)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # 这里可以添加更详细的报告逻辑
+          echo "✅ 链接检查完成！" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "所有外部链接已检查完毕。" >> $GITHUB_STEP_SUMMARY

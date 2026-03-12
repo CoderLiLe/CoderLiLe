@@ -1,5 +1,5 @@
 <!-- 打字特效 https://github.com/DenverCoder1/readme-typing-svg?tab=readme-ov-file -->
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=F79D24&background=A1D9FF00&vCenter=true&width=435&lines=Hi+there+%F0%9F%91%8B%2C+I'm+LiLe!)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=F79D24&background=A1D9FF00&vCenter=true&width=435&lines=Hi+there+%F0%9F%91%8B%2C+I'm+LiLe!){:loading="lazy"}{:loading="lazy"}](https://git.io/typing-svg)
 
 - 🔭 I’m currently working on something cool.
 - 🌱 I’m currently learning Everything I like.
@@ -34,13 +34,13 @@
 <!-- Github奖杯🏆end -->
 
 <!--
-![IceEnd's GitHub stats](https://github-immortality.vercel.app/api?username=CoderLiLe)
+![IceEnd's GitHub stats](https://github-immortality.vercel.app/api?username=CoderLiLe){:loading="lazy"}{:loading="lazy"}
 -->
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-59%20hrs%2010%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-59%20hrs%2010%20mins-blue?style=flat){:loading="lazy"}{:loading="lazy"}
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-4-blue?style=flat)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-4-blue?style=flat){:loading="lazy"}{:loading="lazy"}
 
 **🐱 My GitHub Data** 
 
@@ -116,18 +116,18 @@ Objective-C              1 repo              ███░░░░░░░░�
 
 <div style="display: flex;">
   <a href="https://github.com/CoderLiLe/hello-algo" title="hello-algo" style="margin-right: 200px;">
-    <img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=CoderLiLe&repo=hello-algo&theme=react&border_color=61dafb&border_radius=10">
+    <img height="120" width="120" src="https://github-readme-stats.vercel.app/api/pin/?username=CoderLiLe&repo=hello-algo&theme=react&border_color=61dafb&border_radius=10" loading="lazy">
   </a>
   <a href="https://github.com/CoderLiLe/hello-java" title="hello-java">
-    <img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=CoderLiLe&repo=hello-java&theme=react&border_color=61dafb&border_radius=10">
+    <img height="120" width="120" src="https://github-readme-stats.vercel.app/api/pin/?username=CoderLiLe&repo=hello-java&theme=react&border_color=61dafb&border_radius=10" loading="lazy">
   </a>
 </div>
 <div style="display: flex;">
   <a href="https://github.com/CoderLiLe/hello-python" title="hello-algo" style="margin-right: 200px;">
-    <img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=CoderLiLe&repo=hello-python&theme=react&border_color=61dafb&border_radius=10">
+    <img height="120" width="120" src="https://github-readme-stats.vercel.app/api/pin/?username=CoderLiLe&repo=hello-python&theme=react&border_color=61dafb&border_radius=10" loading="lazy">
   </a>
   <a href="https://github.com/CoderLiLe/MiniSpring" title="MiniSpring" style="margin-right: 200px;">
-    <img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=CoderLiLe&repo=MiniSpring&theme=react&border_color=61dafb&border_radius=10">
+    <img height="120" width="120" src="https://github-readme-stats.vercel.app/api/pin/?username=CoderLiLe&repo=MiniSpring&theme=react&border_color=61dafb&border_radius=10" loading="lazy">
   </a>
 </div>
 
@@ -137,37 +137,31 @@ Objective-C              1 repo              ███░░░░░░░░�
 
 ### Social
 <!-- https://github.com/songquanpeng/stats-cards -->
-![LeetCode中文站统计](https://stats.justsong.cn/api/leetcode?username=CoderLiLe&cn=true&theme=dark)
-![CSDN统计](https://stats.justsong.cn/api/csdn?id=CoderLiLe&theme=dark) 
+![LeetCode中文站统计](https://stats.justsong.cn/api/leetcode?username=CoderLiLe&cn=true&theme=dark){:loading="lazy"}{:loading="lazy"}
+![CSDN统计](https://stats.justsong.cn/api/csdn?id=CoderLiLe&theme=dark){:loading="lazy"}{:loading="lazy"} 
 <!--
-![github统计](https://stats.justsong.cn/api/github?username=CoderLiLe&theme=dark)
-![B站统计](https://stats.justsong.cn/api/bilibili/?id=3493270925609380&theme=dark) 
-![知乎统计](https://stats.justsong.cn/api/zhihu?username=CoderLiLe&theme=dark) 
-![LeetCode英文站统计](https://stats.justsong.cn/api/leetcode/?username=LiLe&theme=dark)
-![掘金统计](https://stats.justsong.cn/api/juejin?id=3438928101901768&theme=dark) 
-![牛客统计](https://stats.justsong.cn/api/nowcoder?id=120905782&theme=dark) 
+![github统计](https://stats.justsong.cn/api/github?username=CoderLiLe&theme=dark){:loading="lazy"}{:loading="lazy"}
+![B站统计](https://stats.justsong.cn/api/bilibili/?id=3493270925609380&theme=dark){:loading="lazy"}{:loading="lazy"} 
+![知乎统计](https://stats.justsong.cn/api/zhihu?username=CoderLiLe&theme=dark){:loading="lazy"}{:loading="lazy"} 
+![LeetCode英文站统计](https://stats.justsong.cn/api/leetcode/?username=LiLe&theme=dark){:loading="lazy"}{:loading="lazy"}
+![掘金统计](https://stats.justsong.cn/api/juejin?id=3438928101901768&theme=dark){:loading="lazy"}{:loading="lazy"} 
+![牛客统计](https://stats.justsong.cn/api/nowcoder?id=120905782&theme=dark){:loading="lazy"}{:loading="lazy"} 
 -->
 
-You are my ![Visitor Count](https://profile-counter.glitch.me/CoderLiLe/count.svg) visitor, Thank You! :kissing_heart: :kissing_heart:
+You are my ![Visitor Count](https://profile-counter.glitch.me/CoderLiLe/count.svg){:loading="lazy"}{:loading="lazy"} visitor, Thank You! :kissing_heart: :kissing_heart:
 
-### My Skill Set
+### 🛠️ 技术栈
 
-![](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-<details>
-<summary>My top languages</summary>
+#### 编程语言
+![](https://img.shields.io/badge/Java-3776AB?style=flat-square&logo=java&logoColor=white){:loading="lazy"} ![](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white){:loading="lazy"} ![](https://img.shields.io/badge/JavaScript-3776AB?style=flat-square&logo=javascript&logoColor=white){:loading="lazy"} ![](https://img.shields.io/badge/C-3776AB?style=flat-square&logo=c&logoColor=white){:loading="lazy"} ![](https://img.shields.io/badge/C++-3776AB?style=flat-square&logo=c++&logoColor=white){:loading="lazy"} ![](https://img.shields.io/badge/SQL-3776AB?style=flat-square&logo=sql&logoColor=white){:loading="lazy"} ![](https://img.shields.io/badge/Swift-3776AB?style=flat-square&logo=swift&logoColor=white){:loading="lazy"} ![](https://img.shields.io/badge/Go-3776AB?style=flat-square&logo=go&logoColor=white){:loading="lazy"} 
 
-| Rank | Languages |
-|-----:|-----------|
-|     1| Java|
-|     2| Javascript|
-|     3| Python    |
-|     4| C         |
-|     5| Objective-C|
-|     6| Swift     |
-|     7| C++       |
-|     8| SQL       |
+#### 前端技术
 
-</details>
+
+#### 后端技术
+
+
+#### 开发工具
 
 ### 学习规划 🌱
 * [hello-algo](https://github.com/CoderLiLe/hello-algo)🔥：数据结构与算法
@@ -179,3 +173,7 @@ You are my ![Visitor Count](https://profile-counter.glitch.me/CoderLiLe/count.sv
 
 ### 开源项目 🔭
 * [MiniSpring](https://github.com/CoderLiLe/MiniSpring)：自己实现的MiniSpring框架，包含Spring的核心功能
+
+---
+
+最后更新于 2026-03-13 07:56:47:05 | 由 AI 助手优化
