@@ -60,15 +60,15 @@ def add_table_of_contents(content: str) -> str:
 
 
 def optimize_images(content: str) -> str:
-    # 为 Markdown 图片添加懒加载（kramdown 语法）
+    # 将 Markdown 图片转换为 HTML <img> 标签并添加懒加载
     content = re.sub(
         r'!\[(.*?)\]\((.*?)\)',
-        r'![\1](\2){:loading="lazy"}',
+        r'<img src="\2" alt="\1" loading="lazy" />',
         content,
     )
-    # 为 HTML <img> 标签添加懒加载和响应式
+    # 为已存在的 HTML <img> 标签添加懒加载（如果还没有）
     content = re.sub(
-        r'<img\s',
+        r'<img\s+(?!.*loading=)',
         '<img loading="lazy" ',
         content,
     )
