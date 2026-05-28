@@ -1,7 +1,19 @@
 <!-- 打字特效 https://github.com/DenverCoder1/readme-typing-svg?tab=readme-ov-file -->
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=F79D24&background=A1D9FF00&vCenter=true&width=435&lines=Hi+there+%F0%9F%91%8B%2C+I'm+LiLe!){:loading="lazy"}](https://github.com/CoderLiLe)
+[<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=F79D24&background=A1D9FF00&vCenter=true&width=435&lines=Hi+there+%F0%9F%91%8B%2C+I'm+LiLe!" alt="Typing SVG" loading="lazy" />{:loading="lazy"}](https://github.com/CoderLiLe)
 
 ## 👋 About Me
+
+## 📑 目录
+- [👋 About Me](#-about-me)
+- [📑 目录](#-目录)
+- [📑 Quick Navigation](#-quick-navigation)
+- [📊 Statistics](#-statistics)
+- [🛠️ Tech Stack](#-tech-stack)
+- [📦 Featured Projects](#-featured-projects)
+- [🌱 Learning Plan](#-learning-plan)
+- [🌐 Social & Stats](#-social-stats)
+- [👁️ Visitor Counter](#-visitor-counter)
+
 
 ## 📑 目录
 - [👋 About Me](#-about-me)
@@ -47,9 +59,9 @@
 
 <!-- WakaTime Stats -->
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-59%20hrs%2012%20mins-blue?style=flat){:loading="lazy"}
+<img src="http://img.shields.io/badge/Code%20Time-59%20hrs%2012%20mins-blue?style=flat" alt="Code Time" loading="lazy" />{:loading="lazy"}
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue?style=flat){:loading="lazy"}
+<img src="http://img.shields.io/badge/Profile%20Views-0-blue?style=flat" alt="Profile Views" loading="lazy" />{:loading="lazy"}
 
 **🐱 My GitHub Data** 
 
@@ -120,33 +132,33 @@ Last Updated on 31/03/2026 19:34:43 UTC
 ## 🛠️ Tech Stack
 
 ### 💻 Programming Languages
-![Java](https://img.shields.io/badge/Java-ED8936?style=flat-square&logo=java&logoColor=white){:loading="lazy"}
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white){:loading="lazy"}
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black){:loading="lazy"}
-![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white){:loading="lazy"}
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white){:loading="lazy"}
-![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white){:loading="lazy"}
-![Swift](https://img.shields.io/badge/Swift-FA7343?style=flat-square&logo=swift&logoColor=white){:loading="lazy"}
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white){:loading="lazy"}
+<img src="https://img.shields.io/badge/Java-ED8936?style=flat-square&logo=java&logoColor=white" alt="Java" loading="lazy" />{:loading="lazy"}
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" loading="lazy" />{:loading="lazy"}
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" loading="lazy" />{:loading="lazy"}
+<img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white" alt="C" loading="lazy" />{:loading="lazy"}
+<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++" loading="lazy" />{:loading="lazy"}
+<img src="https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white" alt="SQL" loading="lazy" />{:loading="lazy"}
+<img src="https://img.shields.io/badge/Swift-FA7343?style=flat-square&logo=swift&logoColor=white" alt="Swift" loading="lazy" />{:loading="lazy"}
+<img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" loading="lazy" />{:loading="lazy"}
 
 ### 🎨 Frontend Technologies
-![HTML5](https://img.shields.io/badge/HTML5-E34C26?style=flat-square&logo=html5&logoColor=white){:loading="lazy"}
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white){:loading="lazy"}
-![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white){:loading="lazy"}
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black){:loading="lazy"}
+<img src="https://img.shields.io/badge/HTML5-E34C26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" loading="lazy" />{:loading="lazy"}
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" loading="lazy" />{:loading="lazy"}
+<img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white" alt="Vue.js" loading="lazy" />{:loading="lazy"}
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" loading="lazy" />{:loading="lazy"}
 
 ### ⚙️ Backend & Frameworks
-![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white){:loading="lazy"}
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white){:loading="lazy"}
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white){:loading="lazy"}
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white){:loading="lazy"}
+<img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring" loading="lazy" />{:loading="lazy"}
+<img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white" alt="Django" loading="lazy" />{:loading="lazy"}
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" alt="Node.js" loading="lazy" />{:loading="lazy"}
+<img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express" loading="lazy" />{:loading="lazy"}
 
 ### 🔧 Tools & Platforms
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white){:loading="lazy"}
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white){:loading="lazy"}
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white){:loading="lazy"}
-![VS%20Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white){:loading="lazy"}
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black){:loading="lazy"}
+<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" loading="lazy" />{:loading="lazy"}
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" loading="lazy" />{:loading="lazy"}
+<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" loading="lazy" />{:loading="lazy"}
+<img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white" alt="VS%20Code" loading="lazy" />{:loading="lazy"}
+<img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" loading="lazy" />{:loading="lazy"}
 
 ---
 
@@ -218,4 +230,4 @@ Last Updated: **2026-05-28** | Optimized by AI Assistant
 
 ---
 
-最后更新于 2026-05-28 23:17:01 | 由 AI 助手优化
+最后更新于 2026-05-28 23:29:15 | 由 AI 助手优化
