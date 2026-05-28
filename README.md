@@ -1,7 +1,18 @@
 <!-- 打字特效 https://github.com/DenverCoder1/readme-typing-svg?tab=readme-ov-file -->
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=F79D24&background=A1D9FF00&vCenter=true&width=435&lines=Hi+there+%F0%9F%91%8B%2C+I'm+LiLe!)](https://github.com/CoderLiLe)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=F79D24&background=A1D9FF00&vCenter=true&width=435&lines=Hi+there+%F0%9F%91%8B%2C+I'm+LiLe!){:loading="lazy"}](https://github.com/CoderLiLe)
 
 ## 👋 About Me
+
+## 📑 目录
+- [👋 About Me](#-about-me)
+- [📑 Quick Navigation](#-quick-navigation)
+- [📊 Statistics](#-statistics)
+- [🛠️ Tech Stack](#-tech-stack)
+- [📦 Featured Projects](#-featured-projects)
+- [🌱 Learning Plan](#-learning-plan)
+- [🌐 Social & Stats](#-social-stats)
+- [👁️ Visitor Counter](#-visitor-counter)
+
 
 - 🔭 I'm currently working on something cool
 - 🌱 I'm constantly learning everything I like
@@ -25,20 +36,20 @@
 
 <!-- GitHub Stats Card && Most used languages：https://github.com/anuraghazra/github-readme-stats -->
 <div align="center">
-  <img height="137px" src="https://github-readme-stats.vercel.app/api?username=CoderLiLe&hide_title=false&hide_border=true&show_icons=true&line_height=21&text_color=000&icon_color=000&bg_color=0,ea6161,ea6161,ec6d71,ff7058,ff8c42,ff9a44&theme=radical" alt="GitHub Stats" loading="lazy" />
-  <img height="137px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CoderLiLe&hide_title=false&hide_border=true&layout=compact&langs_count=6&text_color=000&icon_color=fff&bg_color=0,ea6161,ea6161,ec6d71,ff7058,ff8c42,ff9a44&theme=radical" alt="Top Languages" loading="lazy" />
+  <img loading="lazy" height="137px" src="https://github-readme-stats.vercel.app/api?username=CoderLiLe&hide_title=false&hide_border=true&show_icons=true&line_height=21&text_color=000&icon_color=000&bg_color=0,ea6161,ea6161,ec6d71,ff7058,ff8c42,ff9a44&theme=radical" alt="GitHub Stats" loading="lazy" />
+  <img loading="lazy" height="137px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CoderLiLe&hide_title=false&hide_border=true&layout=compact&langs_count=6&text_color=000&icon_color=fff&bg_color=0,ea6161,ea6161,ec6d71,ff7058,ff8c42,ff9a44&theme=radical" alt="Top Languages" loading="lazy" />
 </div>
 
 <!-- GitHub Activity Graph -->
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=CoderLiLe&theme=github&hide_border=true" alt="Activity Graph" loading="lazy" />
+  <img loading="lazy" src="https://github-readme-activity-graph.vercel.app/graph?username=CoderLiLe&theme=github&hide_border=true" alt="Activity Graph" loading="lazy" />
 </div>
 
 <!-- WakaTime Stats -->
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-59%20hrs%2012%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-59%20hrs%2012%20mins-blue?style=flat){:loading="lazy"}
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue?style=flat)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue?style=flat){:loading="lazy"}
 
 **🐱 My GitHub Data** 
 
@@ -109,33 +120,33 @@ Last Updated on 31/03/2026 19:34:43 UTC
 ## 🛠️ Tech Stack
 
 ### 💻 Programming Languages
-![Java](https://img.shields.io/badge/Java-ED8936?style=flat-square&logo=java&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white)
-![Swift](https://img.shields.io/badge/Swift-FA7343?style=flat-square&logo=swift&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8936?style=flat-square&logo=java&logoColor=white){:loading="lazy"}
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white){:loading="lazy"}
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black){:loading="lazy"}
+![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white){:loading="lazy"}
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white){:loading="lazy"}
+![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white){:loading="lazy"}
+![Swift](https://img.shields.io/badge/Swift-FA7343?style=flat-square&logo=swift&logoColor=white){:loading="lazy"}
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white){:loading="lazy"}
 
 ### 🎨 Frontend Technologies
-![HTML5](https://img.shields.io/badge/HTML5-E34C26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34C26?style=flat-square&logo=html5&logoColor=white){:loading="lazy"}
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white){:loading="lazy"}
+![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white){:loading="lazy"}
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black){:loading="lazy"}
 
 ### ⚙️ Backend & Frameworks
-![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white){:loading="lazy"}
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white){:loading="lazy"}
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white){:loading="lazy"}
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white){:loading="lazy"}
 
 ### 🔧 Tools & Platforms
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![VS%20Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white){:loading="lazy"}
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white){:loading="lazy"}
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white){:loading="lazy"}
+![VS%20Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white){:loading="lazy"}
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black){:loading="lazy"}
 
 ---
 
@@ -143,19 +154,19 @@ Last Updated on 31/03/2026 19:34:43 UTC
 
 <div align="center">
   <a href="https://github.com/CoderLiLe/hello-algo" title="hello-algo">
-    <img height="140" width="320" src="https://github-readme-stats.vercel.app/api/pin/?username=CoderLiLe&repo=hello-algo&theme=react&border_color=61dafb&border_radius=10" alt="hello-algo" loading="lazy" />
+    <img loading="lazy" height="140" width="320" src="https://github-readme-stats.vercel.app/api/pin/?username=CoderLiLe&repo=hello-algo&theme=react&border_color=61dafb&border_radius=10" alt="hello-algo" loading="lazy" />
   </a>
   <a href="https://github.com/CoderLiLe/hello-java" title="hello-java">
-    <img height="140" width="320" src="https://github-readme-stats.vercel.app/api/pin/?username=CoderLiLe&repo=hello-java&theme=react&border_color=61dafb&border_radius=10" alt="hello-java" loading="lazy" />
+    <img loading="lazy" height="140" width="320" src="https://github-readme-stats.vercel.app/api/pin/?username=CoderLiLe&repo=hello-java&theme=react&border_color=61dafb&border_radius=10" alt="hello-java" loading="lazy" />
   </a>
 </div>
 
 <div align="center">
   <a href="https://github.com/CoderLiLe/hello-python" title="hello-python">
-    <img height="140" width="320" src="https://github-readme-stats.vercel.app/api/pin/?username=CoderLiLe&repo=hello-python&theme=react&border_color=61dafb&border_radius=10" alt="hello-python" loading="lazy" />
+    <img loading="lazy" height="140" width="320" src="https://github-readme-stats.vercel.app/api/pin/?username=CoderLiLe&repo=hello-python&theme=react&border_color=61dafb&border_radius=10" alt="hello-python" loading="lazy" />
   </a>
   <a href="https://github.com/CoderLiLe/MiniSpring" title="MiniSpring">
-    <img height="140" width="320" src="https://github-readme-stats.vercel.app/api/pin/?username=CoderLiLe&repo=MiniSpring&theme=react&border_color=61dafb&border_radius=10" alt="MiniSpring" loading="lazy" />
+    <img loading="lazy" height="140" width="320" src="https://github-readme-stats.vercel.app/api/pin/?username=CoderLiLe&repo=MiniSpring&theme=react&border_color=61dafb&border_radius=10" alt="MiniSpring" loading="lazy" />
   </a>
 </div>
 
@@ -178,11 +189,11 @@ Last Updated on 31/03/2026 19:34:43 UTC
 
 <!-- Social Stats Cards -->
 <div align="center">
-  <img src="https://stats.justsong.cn/api/leetcode?username=CoderLiLe&cn=true&theme=dark" alt="LeetCode Stats" loading="lazy" />
+  <img loading="lazy" src="https://stats.justsong.cn/api/leetcode?username=CoderLiLe&cn=true&theme=dark" alt="LeetCode Stats" loading="lazy" />
 </div>
 
 <div align="center">
-  <img src="https://stats.justsong.cn/api/csdn?id=CoderLiLe&theme=dark" alt="CSDN Stats" loading="lazy" />
+  <img loading="lazy" src="https://stats.justsong.cn/api/csdn?id=CoderLiLe&theme=dark" alt="CSDN Stats" loading="lazy" />
 </div>
 
 ---
@@ -190,7 +201,7 @@ Last Updated on 31/03/2026 19:34:43 UTC
 ## 👁️ Visitor Counter
 
 <div align="center">
-  You are my <img src="https://profile-counter.glitch.me/CoderLiLe/count.svg" alt="Visitor Count" loading="lazy" /> visitor!
+  You are my <img loading="lazy" src="https://profile-counter.glitch.me/CoderLiLe/count.svg" alt="Visitor Count" loading="lazy" /> visitor!
   
   Thank you! 😊❤️
 </div>
@@ -204,3 +215,7 @@ Last Updated on 31/03/2026 19:34:43 UTC
 Last Updated: **2026-05-28** | Optimized by AI Assistant
 
 </div>
+
+---
+
+最后更新于 2026-05-28 23:17:01 | 由 AI 助手优化
