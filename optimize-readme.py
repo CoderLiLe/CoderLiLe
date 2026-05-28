@@ -5,151 +5,171 @@ GitHub Profile README 优化脚本
 """
 
 import re
-import os
-from datetime import datetime
+import sys
+import logging
+from pathlib import Path
+from datetime import datetime, timezone, timedelta
 
-def read_readme():
-    """读取 README.md 文件"""
-    with open('README.md', 'r', encoding='utf-8') as f:
-        return f.read()
+logging.basicConfig(level=logging.INFO, format="%(message)s")
+logger = logging.getLogger(__name__)
 
-def write_readme(content):
-    """写入 README.md 文件"""
-    with open('README.md', 'w', encoding='utf-8') as f:
-        f.write(content)
+README_PATH = Path("README.md")
 
-def add_table_of_contents(content):
-    """添加目录导航"""
-    toc_lines = []
-    
-    # 查找所有标题
-    headings = re.findall(r'^(#{2,4})\s+(.+)$', content, re.MULTILINE)
-    
-    if len(headings) > 3:  # 如果有足够多的标题才添加目录
-        toc = "## 📑 目录导航\n\n"
-        for level, title in headings:
-            if level == "##":  # 只处理二级标题
-                # 生成锚点链接
-                anchor = re.sub(r'[^\w\s-]', '', title.lower())
-                anchor = re.sub(r'[-\s]+', '-', anchor).strip('-')
-                toc += f"- [{title}](#{anchor})\n"
-        
-        # 在第一个二级标题后插入目录
-        lines = content.split('\n')
-        for i, line in enumerate(lines):
-            if line.startswith('## ') and not line.startswith('## 📑'):
-                lines.insert(i + 1, '\n' + toc + '\n')
-                return '\n'.join(lines)
-    
+CST = timezone(timedelta(hours=8))
+
+
+def read_readme(path: Path = README_PATH) -> str:
+    if not path.exists():
+        raise FileNotFoundError(f"{path} 不存在")
+    return path.read_text(encoding="utf-8")
+
+
+def write_readme(content: str, path: Path = README_PATH) -> None:
+    path.write_text(content, encoding="utf-8")
+
+
+def _generate_anchor(title: str) -> str:
+    """生成 GitHub 兼容的锚点（保留中文）"""
+    # GitHub 锚点规则：转小写，非字母数字中文连字符替换为 -
+    anchor = title.lower().strip()
+    anchor = re.sub(r"[^\w\u4e00-\u9fff\s-]", "", anchor)
+    anchor = re.sub(r"[\s]+", "-", anchor)
+    return anchor
+
+
+def add_table_of_contents(content: str) -> str:
+    headings = re.findall(r"^(#{2,3})\s+(.+)$", content, re.MULTILINE)
+    top_headings = [t for level, t in headings if level == "##"]
+
+    if len(top_headings) < 2:
+        return content
+
+    toc_parts = ["## 📑 目录\n"]
+    for title in top_headings:
+        anchor = _generate_anchor(title)
+        toc_parts.append(f"- [{title}](#{anchor})\n")
+    toc = "".join(toc_parts)
+
+    lines = content.split("\n")
+    for i, line in enumerate(lines):
+        if line.startswith("## ") and "目录" not in line:
+            lines.insert(i + 1, "\n" + toc)
+            return "\n".join(lines)
+
     return content
 
-def optimize_images(content):
-    """优化图片加载"""
-    # 添加图片懒加载属性
+
+def optimize_images(content: str) -> str:
+    # 为 Markdown 图片添加懒加载（kramdown 语法）
     content = re.sub(
         r'!\[(.*?)\]\((.*?)\)',
         r'![\1](\2){:loading="lazy"}',
-        content
+        content,
     )
-    
-    # 为统计卡片添加尺寸限制
+    # 为 HTML <img> 标签添加懒加载和响应式
     content = re.sub(
-        r'<img height="(\d+)" src="(https://github-readme-stats[^"]+)"',
-        r'<img height="\1" width="\1" src="\2" loading="lazy"',
-        content
+        r'<img\s',
+        '<img loading="lazy" ',
+        content,
     )
-    
     return content
 
-def update_last_updated(content):
-    """更新最后更新时间"""
-    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    
-    # 查找并更新最后更新时间
+
+def update_last_updated(content: str) -> str:
+    now = datetime.now(CST).strftime("%Y-%m-%d %H:%M:%S")
+
     if "最后更新" in content:
         content = re.sub(
-            r'最后更新于\s*\d{4}-\d{2}-\d{2}\s*\d{2}:\d{2}',
-            f'最后更新于 {current_time}',
-            content
+            r"最后更新于\s*\d{4}-\d{2}-\d{2}\s*\d{2}:\d{2}(:\d{2})?",
+            f"最后更新于 {now}",
+            content,
         )
     else:
-        # 在文件末尾添加更新时间
-        if not content.endswith('\n'):
-            content += '\n'
-        content += f'\n---\n\n最后更新于 {current_time} | 由 AI 助手优化\n'
-    
+        content = content.rstrip("\n") + f'\n\n---\n\n最后更新于 {now} | 由 AI 助手优化\n'
+
     return content
 
-def group_skill_badges(content):
-    """按类别分组技能徽章"""
-    # 查找技能徽章部分
-    skill_section = re.search(
-        r'### My Skill Set.*?(?=\n###|\n---|\n```|\n<div|\n<h|\n<style|\n<script|\n</div|\Z)',
+
+def group_skill_badges(content: str) -> str:
+    """按类别分组技能徽章（适配现有 README 格式）"""
+    match = re.search(
+        r"### 🛠️ 技术栈\n.*?(?=\n### |\n---|\Z)",
         content,
-        re.DOTALL | re.IGNORECASE
+        re.DOTALL,
     )
-    
-    if skill_section:
-        skill_text = skill_section.group(0)
-        
-        # 按语言类型分组
-        languages = ['Java', 'Python', 'JavaScript', 'C', 'C++', 'SQL', 'Swift', 'Go']
-        frontend = ['HTML', 'CSS', 'React', 'Vue', 'TypeScript']
-        backend = ['Spring', 'Django', 'Flask', 'Node.js', 'Express']
-        tools = ['Git', 'Docker', 'Linux', 'AWS', 'MySQL', 'PostgreSQL']
-        
-        # 创建分组徽章
-        grouped_badges = "### 🛠️ 技术栈\n\n"
-        
-        grouped_badges += "#### 编程语言\n"
-        for lang in languages:
-            if lang.lower() in skill_text.lower():
-                grouped_badges += f'![](https://img.shields.io/badge/{lang}-3776AB?style=flat-square&logo={lang.lower()}&logoColor=white) '
-        grouped_badges += "\n\n"
-        
-        grouped_badges += "#### 前端技术\n"
-        for tech in frontend:
-            if tech.lower() in skill_text.lower():
-                grouped_badges += f'![](https://img.shields.io/badge/{tech}-61DAFB?style=flat-square&logo={tech.lower()}&logoColor=white) '
-        grouped_badges += "\n\n"
-        
-        grouped_badges += "#### 后端技术\n"
-        for tech in backend:
-            if tech.lower() in skill_text.lower():
-                grouped_badges += f'![](https://img.shields.io/badge/{tech}-6DB33F?style=flat-square&logo=spring&logoColor=white) '
-        grouped_badges += "\n\n"
-        
-        grouped_badges += "#### 开发工具\n"
-        for tool in tools:
-            if tool.lower() in skill_text.lower():
-                grouped_badges += f'![](https://img.shields.io/badge/{tool}-2496ED?style=flat-square&logo={tool.lower()}&logoColor=white) '
-        
-        # 替换原技能部分
-        content = content.replace(skill_text, grouped_badges)
-    
-    return content
+    if not match:
+        return content
 
-def main():
-    print("开始优化 README.md...")
-    
-    # 读取原始内容
-    content = read_readme()
+    old_section = match.group(0)
+
+    badges = {
+        "编程语言": [
+            ("Java", "java", "3776AB"),
+            ("Python", "python", "3776AB"),
+            ("JavaScript", "javascript", "3776AB"),
+            ("TypeScript", "typescript", "3178C6"),
+            ("C", "c", "3776AB"),
+            ("C++", "cplusplus", "3776AB"),
+            ("MySQL", "mysql", "3776AB"),
+            ("Swift", "swift", "3776AB"),
+            ("Go", "go", "3776AB"),
+        ],
+        "前端技术": [
+            ("HTML5", "html5", "E34F26"),
+            ("CSS3", "css3", "1572B6"),
+            ("Vue.js", "vuedotjs", "4FC08D"),
+        ],
+        "后端技术": [
+            ("Spring", "spring", "6DB33F"),
+            ("Node.js", "nodedotjs", "339933"),
+        ],
+        "开发工具": [
+            ("Git", "git", "F05032"),
+            ("Docker", "docker", "2496ED"),
+            ("Linux", "linux", "FCC624"),
+            ("VS Code", "visualstudiocode", "007ACC"),
+        ],
+    }
+
+    new_section = "### 🛠️ 技术栈\n\n"
+    for category, items in badges.items():
+        new_section += f"#### {category}\n"
+        for name, logo, color in items:
+            color_logo = logo if logo or color else ""
+            new_section += (
+                f'![](https://img.shields.io/badge/{name}-{color}'
+                f'?style=flat-square&logo={logo}&logoColor=white) '
+            )
+        new_section += "\n\n"
+
+    return content.replace(old_section, new_section.strip())
+
+
+def main() -> None:
+    logger.info("开始优化 README.md...")
+
+    try:
+        content = read_readme()
+    except FileNotFoundError as e:
+        logger.error(e)
+        sys.exit(1)
+
     original_length = len(content)
-    
-    # 应用优化
+
     content = add_table_of_contents(content)
     content = optimize_images(content)
     content = group_skill_badges(content)
     content = update_last_updated(content)
-    
-    # 写入优化后的内容
+
     write_readme(content)
-    
+
     optimized_length = len(content)
-    print(f"优化完成！")
-    print(f"原始长度: {original_length} 字符")
-    print(f"优化后长度: {optimized_length} 字符")
-    print(f"变化: {optimized_length - original_length} 字符")
+    diff = optimized_length - original_length
+    logger.info(f"优化完成！")
+    logger.info(f"原始长度: {original_length} 字符")
+    logger.info(f"优化后长度: {optimized_length} 字符")
+    logger.info(f"变化: {diff:+d} 字符")
+
 
 if __name__ == "__main__":
     main()
