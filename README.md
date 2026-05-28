@@ -10,7 +10,7 @@
 <!-- 统计卡片 -->
 <!-- GitHub Stats Card && Most used languages：https://github.com/anuraghazra/github-readme-stats -->
 <div align="center">
-  <img height="137px" src="https://github-readme-stats.vercel.app/api?username=CoderLiLe&hide_title=false&hide_border=true&show_icons=trueline_height=21&text_color=000&icon_color=000&bg_color=0,ea6161,ffc64d,fffc4d,52fa5a&theme=graywhite" />
+  <img height="137px" src="https://github-readme-stats.vercel.app/api?username=CoderLiLe&hide_title=false&hide_border=true&show_icons=true&line_height=21&text_color=000&icon_color=000&bg_color=0,ea6161,ffc64d,fffc4d,52fa5a&theme=graywhite" />
   <img height="137px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CoderLiLe&hide_title=false&hide_border=true&layout=compact&langs_count=6&text_color=000&icon_color=fff&bg_color=0,52fa5a,4dfcff,c64dff&theme=graywhite" />
 </div>
 
@@ -40,7 +40,7 @@
 <!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-59%20hrs%2012%20mins-blue?style=flat)
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue?style=flat)
+![Profile Views](https://img.shields.io/badge/Profile%20Views-0-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
@@ -154,30 +154,31 @@ You are my ![Visitor Count](https://profile-counter.glitch.me/CoderLiLe/count.sv
 ![](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) 
 ![](https://img.shields.io/badge/JavaScript-3776AB?style=flat-square&logo=javascript&logoColor=white)
 ![](https://img.shields.io/badge/C-3776AB?style=flat-square&logo=c&logoColor=white)
-![](https://img.shields.io/badge/C++-3776AB?style=flat-square&logo=c++&logoColor=white)
-![](https://img.shields.io/badge/SQL-3776AB?style=flat-square&logo=sql&logoColor=white)
+![](https://img.shields.io/badge/C++-3776AB?style=flat-square&logo=cplusplus&logoColor=white)
+![](https://img.shields.io/badge/MySQL-3776AB?style=flat-square&logo=mysql&logoColor=white)
 ![](https://img.shields.io/badge/Swift-3776AB?style=flat-square&logo=swift&logoColor=white)
 ![](https://img.shields.io/badge/Go-3776AB?style=flat-square&logo=go&logoColor=white)
 
 #### 前端技术
-
+![](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
 
 #### 后端技术
-
+![](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white)
+![](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 
 #### 开发工具
+![](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![](https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 
 ### 学习规划 🌱
 * [hello-algo](https://github.com/CoderLiLe/hello-algo)🔥：数据结构与算法
 * [hello-java](https://github.com/CoderLiLe/hello-java)🔥：Java相关知识点总结及面试题汇总
 * [hello-python](https://github.com/CoderLiLe/hello-python)：Python相关笔记
 
-### 学习资料 📫
-
-
 ### 开源项目 🔭
 * [MiniSpring](https://github.com/CoderLiLe/MiniSpring)：自己实现的MiniSpring框架，包含Spring的核心功能
 
----
-
-最后更新于 2026-03-13 07:56:47:05 | 由 AI 助手优化
