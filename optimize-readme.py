@@ -22,7 +22,7 @@ CST = timezone(timedelta(hours=8))
 
 # 配置常量
 TOC_TITLE = "📑 目录"
-TECH_STACK_TITLE = "🛠️ 技术栈"
+TECH_STACK_TITLE = "🛠️ Tech Stack"
 MIN_HEADINGS_FOR_TOC = 2
 
 
@@ -90,8 +90,8 @@ def add_table_of_contents(content: str) -> str:
     """
     # 提取所有二级标题
     headings = re.findall(r"^##\s+(.+?)$", content, re.MULTILINE)
-    # 过滤掉目录本身
-    headings = [h for h in headings if TOC_TITLE not in h]
+    # 过滤掉目录本身和 Tech Stack
+    headings = [h for h in headings if TOC_TITLE not in h and TECH_STACK_TITLE not in h]
     
     if len(headings) < MIN_HEADINGS_FOR_TOC:
         logger.info(f"标题数量 ({len(headings)}) 少于最小值 ({MIN_HEADINGS_FOR_TOC})，跳过目录生成")
@@ -156,17 +156,27 @@ def update_last_updated(content: str) -> str:
     """更新最后修改时间戳"""
     now = datetime.now(CST).strftime("%Y-%m-%d %H:%M:%S")
     
-    # 查找并更新现有的时间戳
-    if re.search(r"最后更新于\s*\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}(:\d{2})?", content):
+    # 移除所有旧的时间戳行（在文件末尾）
+    content = re.sub(
+        r'\n\n最后更新于.*?(?=\n|$)',
+        "",
+        content,
+    )
+    
+    # 查找并更新文件末尾的 "Last Updated" 行
+    if re.search(r"Last Updated:.*?\*\*", content):
         content = re.sub(
-            r"最后更新于\s*\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}(:\d{2})?.*?(?=\n|$)",
-            f"最后更新于 {now} | 由 AI 助手优化",
+            r"Last Updated:.*?\*\*",
+            f"Last Updated: **{now}** | Optimized by AI Assistant**",
             content,
         )
         logger.info(f"时间戳已更新: {now}")
     else:
-        # 添加新的时间戳到文件末尾
-        content = content.rstrip("\n") + f"\n\n最后更新于 {now} | 由 AI 助手优化\n"
+        # 添加新的时间戳到文件末尾（在最后的分隔线之前）
+        content = content.rstrip("\n")
+        if not content.endswith("---"):
+            content += "\n\n---\n"
+        content += f"\nLast Updated: **{now}** | Optimized by AI Assistant\n"
         logger.info(f"添加新时间戳: {now}")
     
     return content
@@ -175,9 +185,9 @@ def update_last_updated(content: str) -> str:
 def group_skill_badges(content: str) -> str:
     """
     按类别分组技能徽章（适配现有 README 格式）
-    将技能部分重新整理为有组织的类别
+    将技能部分重新整理为有组织的类别，每个徽章单独一行
     """
-    # 查���技术栈部分（## 开头）
+    # 查找技术栈部分（## 开头）
     match = re.search(
         rf"^## {re.escape(TECH_STACK_TITLE)}\n.*?(?=^## |\Z)",
         content,
@@ -196,7 +206,7 @@ def group_skill_badges(content: str) -> str:
             ("JavaScript", "javascript", "F7DF1E"),
             ("TypeScript", "typescript", "3178C6"),
             ("C", "c", "A8B9CC"),
-            ("C++", "cplusplus", "00599C"),
+            ("C%2B%2B", "cplusplus", "00599C"),
             ("SQL", "postgresql", "336791"),
             ("Swift", "swift", "FA7343"),
             ("Go", "go", "00ADD8"),
@@ -217,28 +227,25 @@ def group_skill_badges(content: str) -> str:
             ("Git", "git", "F05032"),
             ("Docker", "docker", "2496ED"),
             ("GitHub", "github", "181717"),
-            ("VS Code", "visualstudiocode", "007ACC"),
+            ("VS%20Code", "visualstudiocode", "007ACC"),
             ("Linux", "linux", "FCC624"),
         ],
     }
     
-    # 构建新的技术栈部分
+    # 构建新的技术栈部分，每个徽章换行
     new_section = f"## {TECH_STACK_TITLE}\n\n"
     for category, items in badges.items():
-        new_section += f"### {category}\n"
-        badge_html = []
+        new_section += f"### {category}\n\n"
         for name, logo, color in items:
-            # 处理特殊字符（如 C++）
-            display_name = name.replace("+", "%2B").replace(" ", "%20")
             badge = (
-                f'<img src="https://img.shields.io/badge/{display_name}-{color}'
-                f'?style=flat-square&logo={logo}&logoColor=white" alt="{name}" loading="lazy" />'
+                f'<img src="https://img.shields.io/badge/{name}-{color}'
+                f'?style=flat-square&logo={logo}&logoColor=white" alt="{name}" loading="lazy" />\n'
             )
-            badge_html.append(badge)
-        new_section += " ".join(badge_html) + "\n\n"
+            new_section += badge
+        new_section += "\n"
     
     old_section = match.group(0)
-    updated_content = content.replace(old_section, new_section.rstrip())
+    updated_content = content.replace(old_section, new_section.rstrip() + "\n")
     logger.info("技能徽章分组完成")
     
     return updated_content
