@@ -17,40 +17,122 @@ jobs:
   optimize:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ github.token }}
 
-      - uses: actions/setup-python@v5
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: 'pip'
 
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          # 安装优化脚本的任何依赖（如果有）
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
       - name: Run README optimization
-        run: python optimize-readme.py
+        id: optimize
+        run: |
+          set +e
+          python optimize-readme.py
+          OPTIMIZE_EXIT_CODE=$?
+          set -e
+          
+          if [ $OPTIMIZE_EXIT_CODE -ne 0 ]; then
+            echo "❌ README 优化失败，退出码: $OPTIMIZE_EXIT_CODE"
+            exit $OPTIMIZE_EXIT_CODE
+          fi
+          
+          echo "✅ README 优化完成"
+          exit 0
 
       - name: Check for changes
         id: git-check
         run: |
-          git diff --quiet README.md || echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          if git diff --quiet README.md; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            echo "📋 README.md 没有变化"
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+            echo "📋 README.md 有变化"
+            echo "变化详情："
+            git diff --stat README.md
+          fi
 
-      - name: Commit and push
+      - name: Configure Git
         if: steps.git-check.outputs.has_changes == 'true'
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add README.md
-          git commit -m "📈 优化 README：$(date +'%Y-%m-%d %H:%M')"
-          git push
+          git config --local pull.rebase false
 
-      - name: Summary
+      - name: Commit and push
+        if: steps.git-check.outputs.has_changes == 'true'
         run: |
+          COMMIT_MSG="📈 优化 README：$(date +'%Y-%m-%d %H:%M:%S')"
+          
+          git add README.md
+          git commit -m "$COMMIT_MSG" || exit 1
+          
+          # 重试推送（最多3次）
+          MAX_RETRIES=3
+          RETRY_COUNT=0
+          
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            if git push; then
+              echo "✅ 成功推送提交"
+              exit 0
+            fi
+            
+            RETRY_COUNT=$((RETRY_COUNT + 1))
+            if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+              echo "⚠️ 推送失败，等待后重试... ($(($MAX_RETRIES - $RETRY_COUNT)) 次重试机会)"
+              sleep 2
+              git pull --rebase
+            fi
+          done
+          
+          echo "❌ 推送失败，已达最大重试次数"
+          exit 1
+
+      - name: Generate summary
+        if: always()
+        run: |
+          SUMMARY_FILE="$GITHUB_STEP_SUMMARY"
+          
+          echo "## 📊 README 优化报告" >> "$SUMMARY_FILE"
+          echo "" >> "$SUMMARY_FILE"
+          
           if [ "${{ steps.git-check.outputs.has_changes }}" = "true" ]; then
-            echo "## 📊 优化报告" >> "$GITHUB_STEP_SUMMARY"
-            echo "" >> "$GITHUB_STEP_SUMMARY"
-            echo "✅ README.md 已成功优化并提交！" >> "$GITHUB_STEP_SUMMARY"
+            echo "✅ **状态**: 成功优化" >> "$SUMMARY_FILE"
+            echo "📝 **README.md** 已成功优化并提交！" >> "$SUMMARY_FILE"
+            echo "" >> "$SUMMARY_FILE"
+            echo "- 🔧 优化时间: $(date +'%Y-%m-%d %H:%M:%S %Z')" >> "$SUMMARY_FILE"
+            echo "- ✨ 变化已推送到仓库" >> "$SUMMARY_FILE"
           else
-            echo "## 📊 优化报告" >> "$GITHUB_STEP_SUMMARY"
-            echo "" >> "$GITHUB_STEP_SUMMARY"
-            echo "✅ README.md 已是最新状态，无需优化。" >> "$GITHUB_STEP_SUMMARY"
+            echo "✅ **状态**: 无需更新" >> "$SUMMARY_FILE"
+            echo "📋 **README.md** 已是最新状态，无需优化。" >> "$SUMMARY_FILE"
+            echo "" >> "$SUMMARY_FILE"
+            echo "- 🔍 检查时间: $(date +'%Y-%m-%d %H:%M:%S %Z')" >> "$SUMMARY_FILE"
           fi
+          
+          echo "" >> "$SUMMARY_FILE"
+          echo "---" >> "$SUMMARY_FILE"
+          echo "" >> "$SUMMARY_FILE"
+          echo "**工作流版本**: 2.0 (优化版)" >> "$SUMMARY_FILE"
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "❌ README 优化工作流失败"
+          echo "请检查以下内容："
+          echo "1. optimize-readme.py 脚本是否存在且可执行"
+          echo "2. README.md 文件是否存在"
+          echo "3. Python 环境是否正确配置"
+          echo "4. 仓库权限是否正确"
+          exit 1
