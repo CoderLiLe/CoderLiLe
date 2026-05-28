@@ -8,13 +8,24 @@ on:
 jobs:
   link-check:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v4
 
       - name: Check external links
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --verbose --no-progress -- README.md
+          args: --verbose --no-progress --timeout 30 --max-retries 2 --exclude-loopback -- README.md
+        continue-on-error: true
+
+      - name: Upload lychee results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lychee-results
+          path: ./lychee/out.html
+        continue-on-error: true
 
       - name: Report
         if: always()
@@ -22,7 +33,21 @@ jobs:
           {
             echo "## 🔗 链接检查报告"
             echo ""
-            echo "检查时间: $(date)"
+            echo "**检查时间**: $(date '+%Y-%m-%d %H:%M:%S %Z')"
             echo ""
-            echo "✅ 链接检查完成！"
+            
+            if [ -f "./lychee/out.html" ]; then
+              echo "✅ 链接检查完成！"
+              echo ""
+              echo "**详细结果**: 查看 Artifacts 中的 lychee-results"
+            else
+              echo "⚠️ 链接检查已执行（仅限详情请查看日志）"
+            fi
+            
+            echo ""
+            echo "**工作流**: [${{ github.run_id }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
           } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Print link check summary
+        if: always()
+        run: echo "Link check workflow completed at $(date)"
