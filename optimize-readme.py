@@ -170,7 +170,7 @@ def update_last_updated(content: str) -> str:
             f"Last Updated: **{now}** | Optimized by AI Assistant**",
             content,
         )
-        logger.info(f"时间戳已更新: {now}")
+        logger.info(f"时间戳��更新: {now}")
     else:
         # 添加新的时间戳到文件末尾（在最后的分隔线之前）
         content = content.rstrip("\n")
@@ -185,7 +185,7 @@ def update_last_updated(content: str) -> str:
 def group_skill_badges(content: str) -> str:
     """
     按类别分组技能徽章（适配现有 README 格式）
-    将技能部分重新整理为有组织的类别，每个徽章单独一行
+    将技能部分重新整理为有组织的类别，每个类别的徽章排在同一行
     """
     # 查找技术栈部分（## 开头）
     match = re.search(
@@ -232,17 +232,19 @@ def group_skill_badges(content: str) -> str:
         ],
     }
     
-    # 构建新的技术栈部分，每个徽章换行
+    # 构建新的技术栈部分，每个类别的徽章排在同一行
     new_section = f"## {TECH_STACK_TITLE}\n\n"
     for category, items in badges.items():
         new_section += f"### {category}\n\n"
+        # 将此类别的所有徽章放在一行
+        badges_line = []
         for name, logo, color in items:
             badge = (
                 f'<img src="https://img.shields.io/badge/{name}-{color}'
-                f'?style=flat-square&logo={logo}&logoColor=white" alt="{name}" loading="lazy" />\n'
+                f'?style=flat-square&logo={logo}&logoColor=white" alt="{name}" loading="lazy" />'
             )
-            new_section += badge
-        new_section += "\n"
+            badges_line.append(badge)
+        new_section += " ".join(badges_line) + "\n\n"
     
     old_section = match.group(0)
     updated_content = content.replace(old_section, new_section.rstrip() + "\n")
