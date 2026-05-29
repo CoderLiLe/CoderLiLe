@@ -1,5 +1,5 @@
 <!-- 打字特效 https://github.com/DenverCoder1/readme-typing-svg?tab=readme-ov-file -->
-[<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=F79D24&background=A1D9FF00&vCenter=true&width=435&lines=Hi+there+%F0%9F%91%8B%2C+I'm+LiLe!" alt="Typing SVG" />](https://github.com/CoderLiLe)
+[<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=F79D24&background=A1D9FF00&vCenter=true&width=435&lines=Hi+there+%F0%9F%91%8B%2C+I'm+LiLe!" alt="Typing SVG"  loading="lazy" />](https://github.com/CoderLiLe)
 
 ## 📑 目录
 
@@ -121,7 +121,6 @@ Last Updated on 31/03/2026 19:34:43 UTC
 ### 🔧 Tools & Platforms
 
 <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" loading="lazy" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" loading="lazy" /> <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" loading="lazy" /> <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" alt="VS%20Code" loading="lazy" /> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=white" alt="Linux" loading="lazy" />
-
 ## 📦 Featured Projects
 
 <div align="center">
@@ -184,7 +183,7 @@ Last Updated on 31/03/2026 19:34:43 UTC
 
 **⭐ If you find my projects helpful, please give them a star!**
 
-Last Updated: **2026-05-29 12:00:00** | Optimized by AI Assistant
+Last Updated: **2026-05-29 22:19:09** | Optimized by AI Assistant**2026-05-29 12:00:00** | Optimized by AI Assistant
 
 </div>
 
